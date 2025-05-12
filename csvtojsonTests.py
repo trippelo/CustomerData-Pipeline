@@ -32,8 +32,5 @@ class TestCSVtoJSON(unittest.TestCase):
             for item in data:
                 self.assertEqual(set(item.keys()), set(expected_keys), "JSON item does not have the expected properties")
 
-    def test_intentional_fail(self):
-        self.assertEqual(1, 2, "This test is intentionally designed to fail to verify CI/CD pipeline failure handling")
-
 if __name__ == '__main__':
     unittest.main()
