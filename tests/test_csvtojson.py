@@ -39,8 +39,5 @@ class TestCSVtoJSON(unittest.TestCase):
     def test_simple_addition(self):
         self.assertEqual(1 + 1, 2, "This test is intentionally designed to always pass to verify CI/CD pipeline success handling")
 
-    def test_intentional_fail(self):
-        self.assertEqual(1, 2, "This test is intentionally designed to fail to verify CI/CD pipeline failure handling")
-
 if __name__ == '__main__':
     unittest.main()
